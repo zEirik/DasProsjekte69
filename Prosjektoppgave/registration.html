@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Amcar</title>
+        <link rel="stylesheet" href="stylesheet.css" type="text/css" />
+        <script>
+        window.onload = startup;
+
+        function startup() {
+            document.getElementById("btnGo").onclick = code;
+        }
+
+        function code() {
+            let membership = document.getElementById("membership");
+
+            if (membership.checked === true) {
+                alert("det virker");
+            }
+
+        }
+</script>
+    </head>
+    
+    <body>
+        <ul class="menybar">
+            <li class="menybar_li"><a href="index.html">Hjem</a></li>
+            <li class="menybar_li"><a href="registration.html" class="active">Registrering</a></li>
+            <li class="menybar_li"><a href="motorshow.html">Motorshow</a></li>
+            <li class="menybar_li"><a href="about.html">Om</a></li>
+        </ul>
+        <br />
+        <h1>Registrering</h1>
+        <br>
+        <p>Type medlemsskap</p>
+        <form>
+            <input id="membership" type="checkbox" value="pensjonist" /> Familiemedlemskap <br />
+            <input id="membership" type="checkbox" value="pensjonist" /> Enkeltmedlemskap <br />
+            <input id="membership" type="checkbox" value="pensjonist" /> Pensjonist <br />
+        </form>
+    </body>
+</html>

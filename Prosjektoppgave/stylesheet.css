@@ -1,0 +1,37 @@
+body {
+    background-color: #EBEBEB;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+.menybar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    text-align: center;
+}
+
+.menybar_li {
+    float: none;
+    display: inline;
+}
+
+.menybar_li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 15px;
+    text-decoration: none;
+    display:inline-block;
+}
+
+.menybar_li a:hover {
+    background-color: #111;
+}
+
+.active {
+    background-color: #0C6FB1; 
+}
